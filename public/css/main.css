@@ -1,0 +1,54 @@
+@keyframes example
+{
+  0%
+  {
+    background-color: blue;
+    left: 0px;
+    top: 0px;
+  }
+  25%
+  {
+    background-color: green;
+    left: 200px;
+    top: 0px;
+  }
+  50%
+  {
+    background-color: orange;
+    left: 200px;
+    top: 200px;
+  }
+  75%
+  {
+    background-color: red;
+    left: 0px;
+    top: 200px;
+  }
+  100%
+  {
+    background-color: purple;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+div {
+  width: 1000px;
+  height: 750px;
+  position: relative;
+  text-align: right;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  color: yellow;
+  border-style: groove;
+  box-shadow: 10px 10px grey;
+  font-size: 7em;
+  font-weight: 900;
+  text-shadow: 15px 15px white;
+}
+div:hover {
+  color: black;
+  text-shadow: 25px 25px pink;
+  background-image: url("https://vignette3.wikia.nocookie.net/balloons/images/4/4a/Maxresdefault1.jpg/revision/latest?cb=20160601080104");
+}
