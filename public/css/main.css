@@ -32,13 +32,13 @@
   }
 }
 
-div {
+#balooney {
   width: 1000px;
   height: 750px;
   position: relative;
   text-align: right;
   animation-name: example;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   color: yellow;
   border-style: groove;
@@ -47,8 +47,50 @@ div {
   font-weight: 900;
   text-shadow: 15px 15px white;
 }
-div:hover {
+#balooney:hover {
   color: black;
   text-shadow: 25px 25px pink;
   background-image: url("https://vignette3.wikia.nocookie.net/balloons/images/4/4a/Maxresdefault1.jpg/revision/latest?cb=20160601080104");
 }
+
+h1 {
+  color: blue;
+  font-weight: bold;
+  font-size: 50px;
+  text-indent: 18.3cm;
+  text-shadow: 3px 3px skyblue;
+}
+
+.polling_message {
+  color: white;
+  float: left;
+  margin-right: 2%;
+}
+
+.view_port {
+  background-color: black;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cylon_eye {
+  background-color: red;
+  background-image: -webkit-linear-gradient(    left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+  background-image:    -moz-linear-gradient(    left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+  background-image:      -o-linear-gradient(    left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+  background-image:         linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  -webkit-animation: 1s linear 0s infinite alternate move_eye;
+     -moz-animation: 1s linear 0s infinite alternate move_eye;
+       -o-animation: 1s linear 0s infinite alternate move_eye;
+          animation: 1s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+   @-moz-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+     @-o-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+        @keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }

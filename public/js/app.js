@@ -1,5 +1,5 @@
 (function() {
   angular.module('basement', [
-    "ng-route",
+    "ngRoute",
   ])
 }());
